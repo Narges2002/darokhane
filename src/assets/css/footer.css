@@ -1,0 +1,122 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 250px;
+    background-color: rgb(200, 255, 255);
+    align-items: center;
+    justify-items: center;
+    padding: 0 50px;
+    gap: 90px;
+}
+
+.footer-right,
+.footer-left {
+    text-align: right;
+    color: gray;
+}
+
+.footer-right h3,
+.footer-left h3 {
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+    padding-bottom: 7px;
+}
+
+.footer-right h3 {
+    color: rgb(187, 1, 1);
+}
+
+.footer-right p,
+.footer-left p {
+    font-size: 12px;
+}
+
+.footer-left {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.btn-top button {
+    padding: 10px 20px;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 5px;
+    font-family: 'IRANSansWeb';
+    font-size: 10px;
+}
+
+.btn-top button:hover {
+    background: rgb(187, 1, 1);
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        grid-template-columns: 1fr;
+        height: 100px !important;
+    }
+
+    .footer-right p,
+    .footer-left p {
+        display: none;
+    }
+
+    .footer-left h3 {
+        font-size: 10px !important;
+    }
+
+    .footer-left .phone {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-left {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .footer {
+        height: 150px;
+        gap: 0;
+    }
+
+    .footer-right p {
+        display: none;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-right h3 {
+        font-size: 12px;
+    }
+
+    .footer-right p {
+        font-size: 8px;
+    }
+
+    .btn-top button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+
+    .footer-right p,
+    .footer-left p {
+        font-size: 10px;
+    }
+
+    .footer-right h3,
+    .footer-left h3 {
+        font-size: 12px;
+    }
+
+    .btn-top button {
+        padding: 7px 10px;
+        font-size: 10px;
+    }
+}

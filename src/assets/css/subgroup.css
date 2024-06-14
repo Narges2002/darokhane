@@ -1,0 +1,33 @@
+.subgroup-sub {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    background-color: white;
+    margin: 20px 170px;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+
+.cosmetic-pro img {
+    width: 170px;
+}
+
+h2{
+    font-size: 17px;
+    color: rgb(133, 2, 2);
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 640px) {
+    .subgroup-sub {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        background-color: white;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+}

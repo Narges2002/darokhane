@@ -1,0 +1,25 @@
+.photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#photo2 {
+    margin-top: 0 !important;
+}
+
+.img-1 {
+    grid-column: 1; /* از ستون اول شروع می‌شود */
+}
+
+.img-2 {
+    grid-column: 2; /* در ستون دوم قرار می‌گیرد */
+}
+
+@media only screen and (max-width: 768px) {
+    .photo {
+        margin-top: 10px !important;
+    }
+}

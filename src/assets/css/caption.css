@@ -1,0 +1,66 @@
+.caption {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 12px;
+    padding: 0 20px;
+    overflow-x: auto; 
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block; /* تبدیل به بلاک اینلاین برای اسکرول بهتر */
+    padding: 15px 17px;
+    border: 1px solid rgb(231, 222, 222);
+    border-radius: 14px;
+    text-align: center;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.txt {
+    float: left;
+    width: 75%;
+}
+
+.txt p {
+    color: rgb(231, 4, 4);
+}
+
+.card img {
+    float: right;
+    width: 20%;
+}
+
+@media only screen and (max-width: 620px) {
+    .caption {
+        grid-template-columns: repeat(5, 145px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  
+    .card {
+        font-size: 0.5rem !important;
+        padding: 7px 10px !important;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .caption {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .card {
+        font-size: 0.6rem;
+        padding: 10px 12px;
+    }
+
+    .caption {
+        margin-top: 30px !important;
+    }
+}

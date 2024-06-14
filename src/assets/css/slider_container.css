@@ -1,0 +1,64 @@
+.slider-c {
+    margin-top: 30px;
+    height: 330px;
+    text-align: center;
+}
+
+.slide {
+    background-color: white;
+    height: 250px !important;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 80% 10%;
+    text-decoration: none;
+    color: black;
+}
+
+.slide .price {
+    font-size: 14px;
+}
+
+.slide p {
+    font-size: 13px;
+    text-align: right;
+    padding-bottom: 30px;
+    text-wrap: wrap;
+}
+
+.slide img {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.swiper-scrollbar, .swiper-pagination, .swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.new-p {
+    text-align: right;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 920px) {
+
+    .slide p {
+        font-size: 12px !important;
+    }
+
+    .slide .price {
+        font-size: 12px !important;
+    }
+
+    .slide .plus {
+        font-size: 22px !important;
+    }
+
+    .slide img {
+        width: 70px !important;
+    }
+
+    .slider-nwpr {
+        height: 290px !important;
+    }
+}

@@ -1,0 +1,32 @@
+.pic {
+    /* margin-top: 60px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.slider-auto {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .pic {
+        display: none;
+    }
+    .slider-auto {
+        margin-top: 50px !important;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .pic {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        margin: 50px 40px 0 30px;
+    }
+}

@@ -1,0 +1,152 @@
+.comestic-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    background-color: white;
+    margin: 50px 170px;
+}
+
+.each-container {
+    background-color: white;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.cosmetic-pro {
+    border: 1px solid rgb(238, 238, 238);
+    padding: 14% 10%;
+    color: black;
+    text-decoration: none;
+}
+
+.cosmetic-pro img {
+    width: 170px;
+}
+
+.cosmetic-pro p {
+    font-size: 13px;
+    text-align: right;
+    padding-bottom: 30px;
+    text-wrap: wrap;
+}
+
+.pric {
+    float: left;
+    font-size: 14px;
+}
+
+.plus {
+    color: rgb(5, 173, 5);
+    font-size: 27px;
+    float: right;
+}
+
+.subgroup-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: center;
+    margin: 50px 170px;
+}
+
+.subgroup {
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.subgroup-container {
+    margin-top: 50px;
+    font-size: 12px;
+    padding: 0 20px;
+    overflow-x: auto; 
+    white-space: nowrap;
+    justify-items: center;
+}
+
+.subgroup {
+    display: inline-block; 
+    padding: 15px 17px;
+    border: 1px solid rgb(231, 222, 222);
+    border-radius: 14px;
+    text-align: center;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 250px;
+}
+
+.para {
+    color: rgb(126, 124, 124);
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.subgroup:hover {
+    background-color: rgb(255, 241, 241);
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subgroup p:hover {
+    color: rgb(141, 141, 141);
+}
+
+@media only screen and (max-width: 480px) {
+    .comestic-container, .subgroup-container {
+        margin: 2% 5% !important;
+    }
+
+    .cosmetic-pro {
+        padding: 8%;
+    }
+
+    .cosmetic-pro img {
+        width: 130px;
+    }
+
+    .cosmetic-pro p {
+        font-size: 8px;
+    }
+
+    .plus {
+        font-size: 20px;
+    }
+
+    .pric {
+        font-size: 10px;
+    }
+
+    .subgroup p {
+        font-size: 10px;
+    }
+
+    .subgroup {
+        padding: 10px;
+    }
+
+    .each-container {
+        background-color: white;
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .comestic-container {
+        margin: 20px 70px;
+    }
+
+    .cosmetic-pro p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .subgroup p {
+        font-size: 12px;
+    }
+
+    .subgroup-container {
+        margin: 20px 70px;
+    }
+}
